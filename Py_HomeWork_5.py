@@ -22,8 +22,6 @@ print("Массив заполненный элементами арифмети
 
 import random
 
-# list_1 = [5, 13, 21, 29, 37, 45, 53, 61]
-
 n =  int(input("Введите количество элементов списка: "))
 list_1 = [random.randint(0, 100) for i in range(n)]
 print()
