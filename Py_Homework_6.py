@@ -12,23 +12,23 @@
 
 # *Пример:*
 
-# **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
-#     **Вывод:** Парам пам-пам  
+**Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
+    **Вывод:** Парам пам-пам  
 
-# str_1 = "пара-ра-рам рам-пам-папам па-ра-па-да"
-# str_1 = str_1.split()
-# volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
-# list_1=[]
-# for word in str_1:
-#     count=0
-#     for i in word:
-#         if i in volwes:
-#             count+=1
-#     list_1.append(count)
-# if len(list_1) == list_1.count(list_1[0]):
-#     print("Парам пам-пам")
-# else:
-#     print("Пам парам")
+str_1 = "пара-ра-рам рам-пам-папам па-ра-па-да"
+str_1 = str_1.split()
+volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+list_1=[]
+for word in str_1:
+    count=0
+    for i in word:
+        if i in volwes:
+            count+=1
+    list_1.append(count)
+if len(list_1) == list_1.count(list_1[0]):
+    print("Парам пам-пам")
+else:
+    print("Пам парам")
 
 
 # Задача 36: Напишите функцию print_operation_table(operation, num_rows=6, num_columns=6), 
@@ -51,12 +51,12 @@
 # 6 12 18 24 30 36
 
 # умнож
-# def print_operation_table(operation, num_rows=6, num_columns=6):
-#     for i in range(1,num_rows+1):
-#         for j in range(1, num_columns+1):
-#             print(operation(i,j), end=' ')
-#         print()
-# print_operation_table(lambda x, y: x * y)
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for i in range(1,num_rows+1):
+        for j in range(1, num_columns+1):
+            print(operation(i,j), end=' ')
+        print()
+print_operation_table(lambda x, y: x * y)
 
 # # сумм
 # def print_operation_table(operation, num_rows=6, num_columns=6):
