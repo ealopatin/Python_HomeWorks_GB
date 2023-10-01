@@ -49,46 +49,6 @@ def search_line():
         # print([file.readlines()])
 
 def edit_data():
-    def search_line():
-    print(
-        "Введите вариант изменения:\n"
-        "1. Имя\n"
-        "2. Фамилия\n"
-        "3. Отчество\n"
-        "4. Телефон\n"
-        "5. Адрес"
-    )
-    index = int(input("Введите вариант: ")) - 1
-
-    searched = input("Введите поисковые данные: ").title()
-    with open("boox.txt", "r", encoding="utf-8") as file:
-        data = file.read().strip().split("\n\n")
-    for item in data:
-        new_item = item.replace("\n", " ").split()
-    if searched in new_item[index]:
-        print(item)
-        print()
-
-
-# def change_user(phone_book):
-#     index = find_index(phone_book, get_search_name())
-#     if index < 0:
-#         print("Абонент не найден")
-#         return False, phone_book
-#     print("Введите новые данные абонента")
-#     return True, change_record(phone_book, index, get_new_user())
-
-# def find_index(phone_book, second_name):
-#     for i in range(len(phone_book)):
-#         if phone_book[i]["Фамилия"].lower() == second_name.lower():
-#             return i
-#     return -1
-
-# def change_record(phone_book, i, record):
-#     return phone_book[:i] + [record] +  phone_book[i + 1:]
-
-
-# def delete_data():
 
 def interface():
     cmd = 0
